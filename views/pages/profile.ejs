@@ -1,0 +1,21 @@
+<%- include('../partials/header', {title : 'Profile'})  %>
+<body>
+    <div class="container p-3">
+        <h1>Profile</h1>
+        <div class="card border-info mt-3" style="width: 18rem;">        
+            <img src="https://cdn.prod.website-files.com/5a9ee6416e90d20001b20038/631c5c817a1cf63d85ded941_001.png" class="card-img-top" alt="..."> 
+            <div class="card-body">
+              <h5 class="card-title"><%= dsc_name %></h5>
+              <p class="card-text"><%= dsc_desc %></p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item text-center"><%= verified %></li>
+              <li class="list-group-item text-center"><%= email %></li>
+              <li class="list-group-item text-center"><%= premium %></li>
+            </ul>
+            <div class="card-body text-center">
+                <button class="btn btn-info"><i class="bi bi-pencil-fill"></i></button>
+            </div>
+        </div>
+    </div>
+</body>
